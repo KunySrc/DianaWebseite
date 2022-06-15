@@ -13,33 +13,13 @@
         <div class="nav-container">
             <nav>
                 <a href="#">Home</a>
-                <audio src="#" type="audio/mp3"></audio> <!-- src ändern auf audiodatei -->
-                <audio controls>
-                    <source src="audio.m4a" type="audio/m4a">
-                    <!-- Nachricht die angezeigt wird wenn der browser das video format nicht vom browser unterstütz wird -->
-                    Audio wird nicht vom Browser unterstützt!
-                </audio>
+                <h1>Name der Pflanze</h1>
             </nav>
-            <div class="nav-linkbar">
-                <a href="#">Instagram</a>
-                <a href="#">Snapchat</a>
-                <a href="#">Heineken</a>
-                <a href="#">Info</a>
-            </div>
         </div>
         <!-- Nav end -->
-
+        <canvas id="animatedCanvas"></canvas>
         <!-- Content start -->
         <div class="content-container">
-            <section class="text">
-                <h1>Name</h1> <!-- Überschrift -->
-                <!-- Text im p element -->
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque nihil expedita reprehenderit, modi voluptatibus nostrum ab officia! Maiores corporis animi sunt aliquid nihil, libero illo dignissimos tempora molestias ipsa dolores recusandae magni, iusto maxime voluptas magnam voluptatem amet expedita placeat repudiandae consequuntur quasi voluptates autem labore? Aspernatur voluptatibus, expedita placeat culpa sapiente doloribus accusamus cumque. Deleniti enim rerum est corrupti nam minus aut optio, sit corporis vitae sint tenetur porro sunt tempora ullam! Quod sit non asperiores sunt excepturi fugiat!</p>
-            </section>
-            <section class="canvas">
-                <canvas style="border:1px solid #000000;">
-                </canvas>
-            </section>
             <section class="video">
                 <video controls>
                     <source src="src/video.mov" type="video/mov">
@@ -47,8 +27,22 @@
                     Video wird nicht vom Browser unterstützt!
                 </video>
             </section>
+            <section class="text">
+                <h1>Name</h1> <!-- Überschrift -->
+                <!-- Text im p element -->
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque nihil expedita reprehenderit, modi voluptatibus nostrum ab officia! Maiores corporis animi sunt aliquid nihil, libero illo dignissimos tempora molestias ipsa dolores recusandae magni, iusto maxime voluptas magnam voluptatem amet expedita placeat repudiandae consequuntur quasi voluptates autem labore? Aspernatur voluptatibus, expedita placeat culpa sapiente doloribus accusamus cumque. Deleniti enim rerum est corrupti nam minus aut optio, sit corporis vitae sint tenetur porro sunt tempora ullam! Quod sit non asperiores sunt excepturi fugiat!</p>
+                <audio class="center-p-2" controls>
+                    <source src="src/audio.m4a" type="audio/m4a">
+                    <!-- Nachricht die angezeigt wird wenn der browser das video format nicht vom browser unterstütz wird -->
+                    Audio wird nicht vom Browser unterstützt!
+                </audio>
+            </section>
+        </div>
+        <div class="center-p-2">
+            <img src="#" alt="bild von den Pflanze"><!-- Bild src hinzufügen -->
         </div>
         <!-- Content end -->
     </div>
+    <script src="animatedCanvas.js"></script>
 </body>
 </html>
